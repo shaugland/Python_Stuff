@@ -1,3 +1,7 @@
+# Edit: This is NOT COMPLETE, just messing around with pygame seeing what I can do.
+#       It will be completed eventually if I get back into pygame
+
+
 import pygame
 import random
 
