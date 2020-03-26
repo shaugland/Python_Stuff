@@ -23,8 +23,7 @@ def addArray(add_array, add_sum):
         digit = add_array[i] + int(string_add_sum[i]) + carry_num    
         carry_num = 0
 
-        # When the numbers are greater than 10 cut off where it is 10 
-        # and there is a carry out
+        # When the numbers are greater than 10 so there is a carry out of one
         if digit > 10:    
             digit = digit % 10
             carry_num = 1
