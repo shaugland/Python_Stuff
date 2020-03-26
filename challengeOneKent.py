@@ -20,16 +20,16 @@ def addArray(add_array, add_sum):
     carry_num = 0
     for i in range(len(add_array) - 1, -1, -1):  # Go from the ones place in the number to the 0th position in the array
         # Add each number as well as the carry number
-        add_sum = add_array[i] + int(string_add_sum[i]) + carry_num    
+        digit = add_array[i] + int(string_add_sum[i]) + carry_num    
         carry_num = 0
 
         # When the numbers are greater than 10 cut off where it is 10 
         # and there is a carry out
-        if add_sum > 10:    
-            add_sum = add_sum % 10
+        if digit > 10:    
+            digit = digit % 10
             carry_num = 1
         
-        return_array.insert(0, add_sum) 
+        return_array.insert(0, digit) 
 
         if i == 0 and carry_num == 1:   # When the number gets an extra digit 
             return_array.insert(0, 1) 
