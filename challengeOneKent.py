@@ -24,7 +24,7 @@ def addArray(add_array, add_sum):
         carry_num = 0
 
         # When the numbers are greater than 10 so there is a carry out of one
-        if digit > 10:    
+        if digit >= 10:    
             digit = digit % 10
             carry_num = 1
         
